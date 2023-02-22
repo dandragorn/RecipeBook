@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-sm-12">
+
+    <form class="form-control m-2 rounded-4" onsubmit="return false">
+
+      <div class="row">
+        <div class="col-sm-5" style="width: 54%">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            #nameInput
+          >
+        </div>
+
+        <div class="col-sm-2 w-25">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            class="form-control"
+            #amountInput
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="d-flex justify-content-start" style="width: 54%">
+          <button
+            class="m-2 btn btn-success"
+            type="submit"
+            (click)="onAddItem(nameInput.value,amountInput.valueAsNumber)"
+          >
+            Add
+          </button>
+          <button class="m-2 btn btn-danger" type="button">Delete</button>
+          <button class="m-2 btn btn-primary" type="button">Clear</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="row" *ngIf="recipeItem">
+  <div class="col-auto">
+    <img
+      src="{{recipeItem.imagePath}}"
+      alt="{{recipeItem.name}}"
+      class="p-2 img-thumbnail rounded-4 w-50 h-100">
+  </div>
+
+  <div>
+    <h1 class="fw-bold">{{recipeItem.name}}</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-auto">
+      <div class="btn-group">
+        <button type="button"
+                class="btn btn-primary dropdown-toggle"
+                dropdownToggle
+                aria-expanded="false"
+        >
+          Manage Recipe
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">To Shopping List</a></li>
+          <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
+          <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-auto">
+      {{recipeItem.description}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-auto">
+      Ingredients
+    </div>
+  </div>
+</div>

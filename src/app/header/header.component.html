@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <a class="ms-4 navbar-brand text-white" href="#">RECIPE BOOK</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-nav mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a
+        class="nav-link link-warning text-decoration-none"
+        href="#"
+        (click)="onSelect('recipeItem')"
+      >
+        Recipes
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link link-warning text-decoration-none"
+        href="#"
+        (click)="onSelect('shoppingList')"
+      >
+        Shopping List
+      </a>
+    </li>
+    <div class="dropdown">
+      <button class="btn btn-success dropdown-toggle"
+              type="button" id="dropdownMenuButton1"
+              dropdownToggle
+              aria-expanded="false">
+        Manage
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

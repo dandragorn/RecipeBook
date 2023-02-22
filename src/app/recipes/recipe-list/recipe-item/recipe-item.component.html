@@ -1,0 +1,15 @@
+<a
+  href="#"
+  class="list-group-item" *ngIf="recipeItem"
+  (click)="onSelect()"
+>
+
+  <div class="d-flex w-100 justify-content-between">
+    <div>
+      <h4 class="mb-1 fw-bold">{{recipeItem.name}}</h4>
+      <small>{{recipeItem.description}}</small>
+    </div>
+    <img class="rounded-4 h-25 w-25" src="{{recipeItem.imagePath}}" alt="{{recipeItem.name}}">
+  </div>
+
+</a>
