@@ -34,8 +34,20 @@
           >
             Add
           </button>
-          <button class="m-2 btn btn-danger" type="button">Delete</button>
-          <button class="m-2 btn btn-primary" type="button">Clear</button>
+          <button
+            class="m-2 btn btn-danger"
+            type="button"
+            (click)="onDeleteItem(nameInput.value)"
+          >
+            Delete
+          </button>
+          <button
+            class="m-2 btn btn-primary"
+            type="button"
+            (click)="onClearItems()"
+          >
+            Clear
+          </button>
         </div>
       </div>
 

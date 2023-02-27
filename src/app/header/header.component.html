@@ -1,40 +1,23 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-  <a class="ms-4 navbar-brand text-white" href="#">RECIPE BOOK</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-nav mb-2 mb-lg-0">
-    <li class="nav-item">
-      <a
-        class="nav-link link-warning text-decoration-none"
-        href="#"
-        (click)="onSelect('recipeItem')"
-      >
-        Recipes
-      </a>
-    </li>
+<nav class="navbar navbar-expand navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="ms-4 navbar-brand text-white fw-bold" routerLink="">RECIPE BOOK</a>
 
-    <li class="nav-item">
-      <a
-        class="nav-link link-warning text-decoration-none"
-        href="#"
-        (click)="onSelect('shoppingList')"
-      >
-        Shopping List
-      </a>
-    </li>
-    <div class="dropdown">
-      <button class="btn btn-success dropdown-toggle"
-              type="button" id="dropdownMenuButton1"
-              dropdownToggle
-              aria-expanded="false">
-        Manage
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a class="m-4 text-decoration-none link-warning text-white" routerLink="/recipes">Recipes</a></li>
+        <li><a class="ms-0 me-4 text-decoration-none link-warning text-white" routerLink="/shoplist">Shopping List</a></li>
       </ul>
+      <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1"
+                dropdownToggle aria-expanded="false">
+          Manage
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item">Action</a></li>
+          <li><a class="dropdown-item">Another action</a></li>
+          <li><a class="dropdown-item">Something else here</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

@@ -1,15 +1,14 @@
 <a
-  href="#"
-  class="list-group-item" *ngIf="recipeItem"
-  (click)="onSelect()"
->
-
+  style="cursor: pointer"
+  class="mb-2 list-group-item clearfix rounded-4"
+  [routerLink]="[index]"
+  routerLinkActive="active bg-dark border-dark"
+  *ngIf="recipeItem">
   <div class="d-flex w-100 justify-content-between">
     <div>
-      <h4 class="mb-1 fw-bold">{{recipeItem.name}}</h4>
-      <small>{{recipeItem.description}}</small>
+      <h4 class="list-group-item-primary">{{recipeItem.name}}</h4>
+      <p class="list-group-item-secondary">{{recipeItem.description}}</p>
     </div>
-    <img class="rounded-4 h-25 w-25" src="{{recipeItem.imagePath}}" alt="{{recipeItem.name}}">
+      <img class="img-fluid rounded-4 h-25 w-25" src="{{recipeItem.imagePath}}" alt="{{recipeItem.name}}">
   </div>
-
 </a>
